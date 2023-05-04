@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #b3cde0;
+}
+
+#nav {
+  background-color: #011f4b;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav ul {
+  display: flex;
+  text-decoration: none;
+}
+
+#nav ul li {
+  cursor: pointer;
+  padding-left: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+#btn a {
+  text-decoration: none;
+  color: white;
+}
+#nav ul li:hover {
+  font-weight: 600;
+  text-shadow: 0 0 100px #ffffff, 0 0 10px;
+  color: white;
+}
+
+#nav ul li:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.centerNav {
+  padding-top: 5px;
+  padding-right: 50px;
+}
+
+.centerNav img:hover {
+  cursor: pointer;
+  filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg)
+    brightness(100%) contrast(100%);
+}
+
+.imgCont {
+  height: 600px;
+  width: 98.7vw;
+  background: url("/ev.jpg") center center;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  background-size: cover;
+}
+
+.stationsText {
+  padding-top: 20px;
+  width: 100%;
+  background-color: #040d21;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+}
+
+.stationsText span {
+  color: rgb(107, 98, 98);
+  font-weight: 600;
+}
+
+.stations {
+  height: 100vh;
+  width: 100%;
+}
+
+.stationsInfo {
+  width: 100%;
+  height: 450px;
+}
