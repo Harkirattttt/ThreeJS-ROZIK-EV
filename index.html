@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulla Dalwai</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- jquery skills -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- <div class="nav container">
+            <img class="logoimg" src="rozik_logo1.1.png">
+        </div> -->
+        <nav id="nav">
+            <div class="leftNav">
+                <ul>
+                    <li>
+                        HOME
+                    </li>
+                    <!-- <li>
+                        VEHICLES
+                    </li> -->
+                    <li>
+                        <a href="stations.html">STATIONS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="centerNav">
+                <img src="./rozik_logo1.1.png" alt="" srcset="" style="width: 121px;">
+            </div>
+        </nav>
+    </header>
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title container">
+                Sustain <span class="home-sub1">~</span> ability<span class="home-sub1">!</span>
+            </h2>
+            <span class="home-subtitle">Leading the Charge towards a Sustainable Future with Electric Vehicles. </span>
+        </div>
+    </section>
+    <br>
+    <!-- skills -->
+    <div class="project-text container">
+        <h2 class="project-title container">
+            <span class="project-span-title">Costs</span> (<span class="project-span-title">₹</span>)
+        </h2>
+    </div>
+    <section class="skill-body">
+        <div class="skills">
+            <div class="skill-name">Per Km Cost(₹)</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="90"></div>
+                <div class="skill-pert" per="10"></div>
+            </div>
+
+            <div class="skill-name">8 Year Fuel Cost(₹) </div>
+            <div class="skill-bar">
+                <div class="skill-per" per="80"></div>
+                <div class="skill-pert" per="7"></div>
+            </div>
+
+            <div class="skill-name">Maintainance & Servicing(₹)</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="60"></div>
+                <div class="skill-pert" per="30"></div>
+            </div>
+
+            <!-- <div class="skill-name">Parts : Repairs/Replacements(₹)</div>
+            <div class="skill-bar">
+                <div class="skill-pert" per="30" style="background: var(--text-color);"></div>
+                <div class="skill-per" per="90" style="background: var(--second-color);""></div>
+            </div> -->
+        </div>
+    </section>
+    <script>
+        $('.skill-pert').each(function () {
+            var $this = $(this);
+            var per = $this.attr('per');
+            $this.css("width", per + '%');
+            $({ animatedValue: 0 }).animate({ animatedValue: per }, {
+                duration: 1000,
+                step: function () {
+                    $this.attr('per', Math.floor(this.animatedValue));
+                },
+                complete: function () {
+                    $this.attr('per', Math.floor(this.animatedValue) + '%');
+                }
+            });
+        });
+
+    </script>
+    <script>
+        $('.skill-per').each(function () {
+            var $this = $(this);
+            var per = $this.attr('per');
+            $this.css("width", per + '%');
+            $({ animatedValue: 0 }).animate({ animatedValue: per }, {
+                duration: 1000,
+                step: function () {
+                    $this.attr('per', Math.floor(this.animatedValue));
+                },
+                complete: function () {
+                    $this.attr('per', Math.floor(this.animatedValue) + '%');
+                }
+            });
+        });
+
+    </script>
+    <br>
+    <br>
+    <!-- parts -->
+
+    <div class="project-text container">
+        <h2 class="project-title container">
+            <span class="project-span-title">Features</span> ~
+        </h2>
+    </div>
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">All</span>
+        <span class="filter-item" data-filter="html">Performance</span>
+        <span class="filter-item" data-filter="adon">Ad~ons</span>
+        <!-- <span class="filter-item" data-filter="reward">Rewards</span> -->
+
+    </div>
+    <section class="post container">
+        <div class="post-box html">
+            <img src="https://www.renaultgroup.com/wp-content/uploads/2021/07/r-dam-1096063-min.jpeg" alt=""
+                class="post-img">
+            <h2 class="category">EV</h2>
+            <a href="./motor.html" class="post-title">
+                Motors in EV
+            </a>
+            <p class="post-description">Key component that converts electrical energy from the battery into mechanical
+                energy to power the vehicle. </p>
+        </div>
+        <div class="post-box adon">
+            <img src="https://cdn.mobilesyrup.com/wp-content/uploads/2020/11/Bolt-ev-crossover-infotatinment-scaled.jpg"
+                alt="" class="post-img">
+            <h2 class="category">EV</h2>
+            <a href="./Infotainment.html" class="post-title">
+                Infotainment in EV
+            </a>
+            <p class="post-description">Provides information and entertainment to the driver and passengers, emphasizes
+                the benefits of using an electric vehicle (EV) over a traditional gasoline-powered car</p>
+        </div>
+        <div class="post-box html">
+            <img src="https://d2n4wb9orp1vta.cloudfront.net/cms/brand/mms/2022-mms/mms-0822-photo-ultiumbattery.jpg"
+                alt="" class="post-img">
+            <h2 class="category">EV</h2>
+            <a href="./battery.html" class="post-title">
+                EV Batteries
+            </a>
+            <span class="post-date"></span>
+            <p class="post-description">A crucial component that provides the power for the electric motor.</p>
+        </div>
+    </section>
+    <!-- footer -->
+    <section class="footerr">
+        <div class="footer container">
+            <p>&#169; K A H</p>
+        </div>
+    </section>
+    <!-- jquery link -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- link to js -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
